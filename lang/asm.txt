@@ -1,0 +1,15 @@
+Structure:
+    - A,B,C,D,E,F,H,L,I registers (32-bit)
+    - SP,IX,IY (64-bit)
+    - Prime versions of A-F
+    - Combined into AF,BC,DE,HL 64-bit registers
+
+LD loads a memory value/literal into a register
+LDP loads a memory value/literal into a register pair
+
+STR stores a register into a memory location
+STRP stores a register pair into a memory location
+
+SWP swaps two register values
+
+ALT changes to A-F'

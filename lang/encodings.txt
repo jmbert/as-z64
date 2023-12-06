@@ -1,0 +1,34 @@
+Register encodings:
+    F: 0
+    A: 1
+    B: 2
+    C: 3
+    D: 4
+    E: 5
+    H: 6
+    L: 7
+    AF: 8
+    BC: 9
+    DE: 10
+    HL: 11
+    SP: 12
+    IX: 13
+    IY: 14
+4-bit register encoding
+
+REGISTER: 32-bit register
+REGISTERPAIR: 64-bit register pair (includes 64-bit single registers)
+MEMORY: 64-bit memory address
+LITERAL: 32-bit literal
+LITERALPAIR: 64-bit literal
+
+Instruction encodings:
+    STR:    00  ( REGISTER, MEMORY )
+    STRP:   02  ( REGISTERPAIR, MEMORY )
+    LD:     03  ( REGISTER, MEMORY ) 
+    LDL:    04  ( REGISTER, LITERAL )
+    LDP:    05  ( REIGSTERPAIR, MEMORY )
+    LDLP:   06  ( REGISTERPAIR, LITERALPAIR )
+    SWP:    07  ( REGISTER, REGISTER )
+    SWPP:   08  ( REGISTERPAIR, REGISTERPAIR )
+    ALT:    08  ( NONE )

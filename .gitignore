@@ -1,0 +1,7 @@
+test/
+*.a
+*.bin
+*.o
+*.d
+.vscode/
+as-z64
